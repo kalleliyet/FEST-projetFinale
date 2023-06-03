@@ -1,0 +1,154 @@
+body{
+  margin:0;
+  box-sizing: border-box;
+}
+.tickets-body{
+  background-image:
+    linear-gradient(to bottom, rgba(62, 37, 122, 0.496), rgba(129, 5, 127, 0.561)),
+    url('/src/components/assets/crowd.jpg');
+    background-size:cover;
+    background-position:top;
+    background-attachment: fixed;
+    margin:auto;
+    height:110vh;
+    width:100%;
+    display: flex; 
+    flex-wrap: wrap;  
+}
+:root{
+  --glow-color: rgb(217, 176, 255);
+  --glow-spread-color: rgb(195, 114, 199);
+  --enhanced-glow-color: rgb(231, 206, 255);
+  --purple: rgb(102, 30, 102);
+}
+.tickets-container{
+  width:fit-content;
+  margin-top:9em;
+  margin-left:20%;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+}
+
+.ticket{
+  background-color:rgba(217, 176, 255, 0.128) ;
+  backdrop-filter: blur(10px);
+  height:25em;
+  width:19vw;
+  line-height: 3em;
+  display: flex;
+  flex-direction: column;
+  padding-top:3em;
+  padding-left: 1em;
+  padding-right: 1em;
+  align-items: center;
+  box-shadow: 1em 1em 1em rgba(51, 13, 53, 0.469);
+}
+.ticket-box{
+  gap:1em;
+  width: max-content;
+  max-height: max-content;
+  display:flex;
+}
+
+.tickets-body h1{
+  font-size: 4em;
+}
+
+.get-tickets{
+  background-color: var(--glow-spread-color);
+  padding:1em;
+  text-decoration: none;
+  color:var(--purple);
+}
+
+.get-tickets:hover{
+  color: var(--purple);
+  background-color: var(--glow-color);
+  box-shadow: 0 0 1em .25em var(--glow-color),
+         0 0 4em 2em var(--glow-spread-color),
+         inset 0 0 .75em .25em var(--glow-color);
+  cursor:pointer;
+  transition:0.3s;
+}
+
+
+
+
+.ticket-description{
+  text-align: center;
+  padding: 1.2em;
+  line-height: 1.4em;
+  font-size: 1vw;
+  height: 9em;
+  color:rgba(255, 255, 255, 0.708)
+}
+.ticket-type{
+  color:var(--purple);
+  font-size: 1.8vw;
+}
+
+.price{
+  color:rgb(255, 255, 255);
+  font-size:4.5vw;
+}
+
+.ticket-price span{
+  font-size: 20px;
+  color:rgb(245, 201, 240)
+}
+
+#standard:hover{
+  border: 5px solid var(--purple);
+  cursor:pointer;
+  transition:0.1s;
+  
+}
+#vipPlus:hover{
+  border: 5px solid rgb(226, 212, 134);
+  cursor:pointer;
+  transition:0.1s;
+}
+#danceFloor:hover{
+  border: 5px solid silver;
+  cursor:pointer;
+  transition:0.1s;
+}
+
+@media all and (max-width:905px){
+  .ticket{
+    width:60vw;
+    height:20vh;
+    line-height: 0.6em;
+    padding:1%;
+    display: flex;
+    gap:1px;
+    margin:5px;
+  }
+  .price{
+    font-size: 3.5vw;
+  }
+  .ticket-price span{
+    font-size:2vw;
+  }
+  .ticket-type{
+    font-size:3vw;
+    margin-top:16px;
+    
+  }
+  .ticket-description{
+    font-size: 9px;
+    margin-bottom: 10px;
+  }
+  .ticket-box{
+    display:flex;
+    flex-direction: column;
+  }
+  .get-tickets{
+    width:1vw;
+
+  }
+
+}
+
+

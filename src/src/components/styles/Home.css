@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;800&display=swap');
+body{
+  margin:0;
+  box-sizing: border-box;
+  font-family: Raleway, sans-serif;
+}
+.home-body{
+  background-image:
+    linear-gradient(to bottom, rgba(62, 37, 122, 0.496), rgba(129, 5, 127, 0.561)),
+    url('/src/components/assets/crowd2.jpg');
+    background-size:cover;
+    background-attachment: fixed;
+    margin:auto;
+    height:100vh;
+    display: flex;
+    align-items: center;  
+}
+.home-container{
+  height:70%;
+  width:40%;
+  line-height: 2vw;
+  margin-top: 3em;
+  margin-left: 20%;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.home-container h3{
+  font-weight: 800;
+  line-height: 1.2em;
+  font-size: 5.5vw;
+  font-family: Raleway, sans-serif;
+  color:white;
+}
+.home-container div{
+  backdrop-filter: blur(4px);
+  color:rgb(229, 205, 252);
+  font-size:1.2em;
+  font-family:Raleway, sans-serif;
+  font-weight:300;
+  width:20em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+.gradient-text{
+  font-family:Raleway, sans-serif;
+  font-weight: 800;
+  background: -webkit-linear-gradient(left, #fffffff2,rgb(195, 114, 199));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.register-btn{
+  --glow-color: rgb(217, 176, 255);
+  --glow-spread-color: rgb(195, 114, 199);
+  --enhanced-glow-color: rgb(231, 206, 255);
+  --btn-color: rgb(102, 30, 102);
+  margin-right:10%;
+  margin-top:1.5em;
+  border: .25em solid var(--glow-color);
+  padding: 0.8em 3em;
+  color: var(--glow-color);
+  font-size: 1em;
+  font-family:Raleway, sans-serif;
+  font-weight: bold;
+  background-color: transparent;
+  outline: none;
+  width:max-content;
+  height:10vh;
+  box-shadow: 0 0 0.6em .25em var(--glow-color),
+         0 0 4em 0.6em var(--glow-spread-color),
+         inset 0 0 .75em .25em var(--glow-color);
+  text-shadow: 0 0 .5em var(--glow-color);
+  position: relative;
+  transition: all 0.3s;
+
+ }
+ 
+ .register-btn:hover {
+  color: var(--btn-color);
+  background-color: var(--glow-color);
+  box-shadow: 0 0 1em .25em var(--glow-color),
+         0 0 4em 2em var(--glow-spread-color),
+         inset 0 0 .75em .25em var(--glow-color);
+  cursor:pointer;
+ }
+ 
+ .register-btn:active {
+  box-shadow: 0 0 0.5em .25em var(--glow-color),
+         0 0 2.5em 2em var(--glow-spread-color),
+         inset 0 0 .5em .25em var(--glow-color);
+ }
+
+ @media all and (max-width:990px){
+   .home-container h3{
+    font-size:3em;
+   }
+   
+ }
+
+

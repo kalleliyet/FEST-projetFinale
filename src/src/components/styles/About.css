@@ -1,0 +1,107 @@
+
+body{
+  margin:0;
+  box-sizing: border-box;
+}
+.about-body{
+  background-image:
+    linear-gradient(to bottom, rgba(62, 37, 122, 0.496), rgba(129, 5, 127, 0.561)),
+    url('/src/components/assets/crowd3.jpg');
+    background-size:cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin:auto;
+    height:100vh;
+    display: flex; 
+    flex-wrap: wrap;  
+}
+.about-container{
+  width:50em;
+  margin-top:9em;
+  margin-left:20%;
+  display: flex;
+  flex-direction: row;
+}
+.about-container h1{
+  font-size: 4vw;
+}
+.about-description{
+background-color: rgba(188, 96, 206, 0.12);  
+backdrop-filter: blur(5px);
+width: 100%;
+padding: 5%;
+font-size: 1.1vw;
+line-height: 1.8em;
+color:rgba(255, 255, 255, 0.85);
+margin-right: 5em;
+margin-bottom:2% ;
+}
+.about-box{
+  background-color: rgba(0, 0, 0, 0.227);  
+  backdrop-filter: blur(5px);
+  width:50%;
+  height:15vh;
+  color:rgba(255, 255, 255, 0.752);
+  padding:3%;
+  line-height:1.5em ;
+}
+.about-box:hover{
+  color:#db2bd2;
+  transition: 0.7s;
+}
+.container{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.container-left{
+  width:40vw;
+  height:max-content;
+}
+.container-right{
+  display: flex;
+  flex-direction: column;
+  gap:2%;
+}
+.about-box-container{
+  display: flex;
+  gap:1.5%;
+}
+
+.record-box{
+  display:flex;
+  gap:2vw;
+  padding: 1.8vw;
+  margin-left: 0.7vw;
+  width:20vw;
+  height:8.5vw;
+  background-color: rgba(0, 0, 0, 0.227);  
+  backdrop-filter: blur(5px);
+}
+.number{
+  color:#92148c;
+  font-size: 3vw;
+  font-weight: bolder;
+  display: flex;
+  justify-content: center;
+
+}
+.record{
+  color:rgba(255, 255, 255, 0.75);
+  font-size: 1vw;
+}
+.record-title{
+  color:white;
+  font-weight: bolder;
+  font-size:1.5vw;
+}
+
+.span-container{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.about-icon{
+  margin-left: 16vw;
+  font-size: 1.3vw;
+}
