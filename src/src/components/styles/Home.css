@@ -33,7 +33,7 @@ body{
   font-family: Raleway, sans-serif;
   color:white;
 }
-.home-container div{
+.home-info{
   backdrop-filter: blur(4px);
   color:rgb(229, 205, 252);
   font-size:1.2em;
@@ -74,7 +74,6 @@ body{
   text-shadow: 0 0 .5em var(--glow-color);
   position: relative;
   transition: all 0.3s;
-
  }
  
  .register-btn:hover {
@@ -97,6 +96,29 @@ body{
     font-size:3em;
    }
    
+ }
+ .countdown-box{
+  font-size: 4vw;
+  line-height: 1em;
+  color:white;
+  display: flex;
+  flex-direction: column;
+  gap:3px;
+ }
+ .countdown{
+  display:flex;
+  flex-direction:row;
+  gap:1em;
+  margin-top:1.5em ;
+  margin-bottom: 15%;
+ }
+ .time-unit{
+  font-size: 0.3em;
+ }
+ .countdown div{
+  background-color:rgba(128, 0, 128, 0.338);
+  backdrop-filter: blur(10px);
+  padding:0.4em;
  }
 
 
